@@ -1,0 +1,160 @@
+
+.navbar {
+  top: 0;
+  width: 100%;
+  color: white;
+  z-index: 1000;
+  
+}
+.nav-back{
+  background-image: url(/src/imagens/1.png); ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+
+.navbar-container {
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-weight: bold;
+  
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex: 2;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+.entrar {
+  margin-left: 20px;
+}
+
+.cta-button {
+  background-color: #FFC107;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+ .cta-button1 {
+  background: linear-gradient(90deg, #ff4b8b, #ff9900);
+  color: black;
+  text-decoration: none;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.cta-button1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 120, 0, 0.4);
+}
+
+
+.cta-button:hover {
+  background-color: #e0a800;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* HERO SECTION */
+.hero {
+  
+  color:white;
+  padding: 180px 40px 100px; /* padding-top ajustado por causa da navbar fixa */
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;}
+
+.hero-content h1 {
+  font-size: 3rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.2;
+}
+
+.hero .cta-button1 {
+  color:white;
+  font-size: 1rem;
+  padding: 15px 30px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+.hero h1{
+  text-align: center;
+}
+
+  .nav-links.active {
+    display: flex;
+    background:black;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-container {
+    flex-wrap: nowrap;
+  }
+
+  .cta-button {
+    display: none;
+  }
+}
