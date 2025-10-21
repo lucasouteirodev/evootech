@@ -3,7 +3,7 @@
 /* ===== SECTION ===== */
 .equipamento-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
   align-items: center;
   padding: 100px 10%;
@@ -12,8 +12,6 @@
 }
 
 .equipamento-content {
-  flex: 1;
-  max-width: 600px;
 }
 
 .equipamento-content h2 {
@@ -110,7 +108,6 @@
 
 /* ===== IMAGE ===== */
 .equipamento-image {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;

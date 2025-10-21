@@ -1,5 +1,10 @@
+.carousel_section{
+  width: 100%;
+  overflow: hidden;
+}
 .slide_container{
   height: 400px;
+  
 }
 
 .slide_container img{

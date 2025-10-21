@@ -15,26 +15,20 @@
 
 .navbar-container {
   display: flex;  
-  align-items: center;
-  justify-content: space-between;
   padding: 20px 40px;
-  max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap;
   font-size: 1.5rem;
+  justify-content: space-around;
 }
 
 .logo {
   font-weight: bold;
-  
-  flex: 1;
 }
 
 .nav-links {
   display: flex;
   gap: 50px;
   justify-content: center;
-  flex: 2;
 }
 
 .nav-links a {
