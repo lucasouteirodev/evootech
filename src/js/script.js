@@ -1,31 +1,29 @@
 function toggleMenu() {
-      document.getElementById('navLinks').classList.toggle('active');
-    }
+  document.getElementById('navLinks').classList.toggle('active');
+}
 
-    document.querySelectorAll(".faq-question").forEach((button) => {
-  button.addEventListener("click", () => {
+document.querySelectorAll('.faq-question').forEach((button) => {
+  button.addEventListener('click', () => {
     const item = button.parentElement;
-    const icon = button.querySelector(".icon");
-    const isActive = item.classList.contains("active");
+    const icon = button.querySelector('.icon');
+    const isActive = item.classList.contains('active');
 
     // Fecha todas as outras perguntas
-    document.querySelectorAll(".faq-item").forEach((el) => {
-      el.classList.remove("active");
-      el.querySelector(".icon").textContent = "+";
+    document.querySelectorAll('.faq-item').forEach((el) => {
+      el.classList.remove('active');
+      el.querySelector('.icon').textContent = '+';
     });
 
     // Alterna o item clicado
     if (!isActive) {
-      item.classList.add("active");
-      icon.textContent = "–";
+      item.classList.add('active');
+      icon.textContent = '–';
     } else {
-      item.classList.remove("active");
-      icon.textContent = "+";
-    }
-  });
+      item.classList.remove('active');
+      icon.textContent = '+';
+    }
+  });
 });
-
-
 
 ScrollReveal().reveal('.about-container h2', {
   origin: 'left',
@@ -70,5 +68,3 @@ ScrollReveal().reveal('.section-obstaculos h1', {
 });
 
 // carousel
-
-

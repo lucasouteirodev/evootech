@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+🎯<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Evootech - Rastreamento</title>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+<script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="/src/css/nav-hero.css">
 <link rel="stylesheet" href="/src/css/style.css">
 <link rel="stylesheet" href="src/css/about-section.css">
@@ -16,273 +19,300 @@
 <link rel="stylesheet" href="src/css/footer.css">
 <link rel="stylesheet" href="src/css/info-section.css">
 <link rel="stylesheet" href="src/css/whats-button.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<link rel="stylesheet" href="src/css/carousel-section.css">
 </head>
 <body>
-
-<!-- NAVBAR -->
-<div class="nav-back">
-<header class="navbar">  
-<div class="navbar-container">
-<div class="logo">EVOOTECH</div>
-
-<nav class="nav-links" id="navLinks">
-<a href="#">INICIO</a>
-<a href="#">SOBRE NÓS</a>
-<a href="#">EQUIPAMENTO</a>
-<a href="#">SUPORTE</a>
-</nav>
-<button class="cta-button">SAIBA MAIS</button>
-
-<!-- Hamburger -->
-<div class="hamburger" onclick="toggleMenu()">
-☰
-</div>
-</div>
-</header>
-
-<!-- HERO SECTION -->
-<section class="hero">
-<div class="hero-content">
-<h1>Sua empresa de <span class="span-grad">rastreamento</span> em um novo nível de excelência</h1>
-<a href="#" class="cta-button1">Participe agora</a>
-</div>
-</section>
-
-
-<section class="equipamento-section">
-<div class="equipamento-content">
-<h2>Tecnologia e Qualidade</h2>
-<h1>EQUIPAMENTO <span>EVOO 4G</span></h1>
-<p>
-Desenvolvido com tecnologia de ponta, o novo modelo Evoo 4G une 
-eficiência, conectividade e desempenho para garantir maior qualidade no rastreamento veicular.
-</p>
-<ul class="info-list">
-<li>⚙️ Firmware desenvolvido pela evootech.</li>
-<li>🔋 Bateria (amperagem) com até 10 horas sem alimentação.</li>
-<li>🌐 Alto desempenho com qualquer chip/operadora.</li>
-<li>💡 Design moderno e compacto.</li>
-</ul>
-<div class="btn-group">
-<a href="#" class="btn-primary">Ver Detalhes</a>
-<a href="#" class="btn-secondary">Solicitar Orçamento</a>
-</div>
-</div>
-
-<div class="equipamento-image">
-<img src="src/imagens/evoo4g.png" alt="Equipamento Evoo Tech" />
-</div>
-</section>
-
-
- <section class="info-section">
-    <div class="info-card">
-      <div class="icon">⚙️</div>
-      <h3>Alta Performance</h3>
-      <p>Componentes otimizados para máxima eficiência.</p>
-    </div>
-    <div class="info-card">
-      <div class="icon">🔋</div>
-      <h3>Eficiência Energética</h3>
-      <p>Economia e sustentabilidade sem perder potência.</p>
-    </div>
-    <div class="info-card">
-      <div class="icon">🧠</div>
-      <h3>Tecnologia Inteligente</h3>
-      <p>Controle e automação para resultados superiores.</p>
-    </div>
-    <div class="info-card">
-      <div class="icon">💡</div>
-      <h3>Design Moderno</h3>
-      <p>Estilo e inovação em um só produto.</p>
+  
+  <!-- NAVBAR -->
+  <div class="nav-back">
+    <header class="navbar">  
+      <div class="navbar-container">
+        <div class="logo">EVOOTECH</div>
+        
+        <nav class="nav-links" id="navLinks">
+          <a href="#">INICIO</a>
+          <a href="#">SOBRE NÓS</a>
+          <a href="#">EQUIPAMENTO</a>
+          <a href="#">SUPORTE</a>
+        </nav>
+        <button class="cta-button">SAIBA MAIS</button>
+        
+        <!-- Hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+          ☰
+        </div>
+      </div>
+    </header>
+    
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Sua empresa de <span class="span-grad">rastreamento</span> em um novo nível de excelência</h1>
+        <a href="#" class="cta-button1">Participe agora</a>
+      </div>
+    </section>
+    
+    
+    <section class="equipamento-section">
+      <div class="equipamento-content">
+        <h2>Tecnologia e Qualidade</h2>
+        <h1>EQUIPAMENTO <span>EVOO 4G</span></h1>
+        <p>
+          Desenvolvido com tecnologia de ponta, o novo modelo Evoo 4G une 
+          eficiência, conectividade e desempenho para garantir maior qualidade no rastreamento veicular.
+        </p>
+        <ul class="info-list">
+          <li>⚙️ Firmware desenvolvido pela evootech.</li>
+          <li>🔋 Bateria (amperagem) com até 10 horas sem alimentação.</li>
+          <li>🌐 Alto desempenho com qualquer chip/operadora.</li>
+          <li>💡 Design moderno e compacto.</li>
+        </ul>
+        <div class="btn-group">
+          <a href="#" class="btn-primary">Ver Detalhes</a>
+          <a href="#" class="btn-secondary">Solicitar Orçamento</a>
+        </div>
+      </div>
+      
+      <div class="equipamento-image">
+        <img src="src/imagens/evoo4g.png" alt="Equipamento Evoo Tech" />
+      </div>
+    </section>
+    
+    
+    <section class="info-section">
+      <div class="info-card">
+        <div class="icon">⚙️</div>
+        <h3>Alta Performance</h3>
+        <p>Componentes otimizados para máxima eficiência.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🔋</div>
+        <h3>Eficiência Energética</h3>
+        <p>Economia e sustentabilidade sem perder potência.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🧠</div>
+        <h3>Tecnologia Inteligente</h3>
+        <p>Controle e automação para resultados superiores.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">💡</div>
+        <h3>Design Moderno</h3>
+        <p>Estilo e inovação em um só produto.</p>
+      </div>
+    </section>
+    
+    
+    
+  </div>
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>ACOMPANHE SEU VEICULO EM TEMPO REAL DIRETO NO NOSSO APLICATIVO.</h2><br></h2>
+        <p>
+          A EVOO Tech apresenta a melhor e mais completa plataforma de
+          rastreamento do mercado. Tudo isso associado a um layout incrível,
+          agradável e intuitivo.
+        </p>
+        <a href="#" class="about-button">Saiba mais</a>
+      </div>
+      <div class="about-image">
+        <img src="/src/imagens/44.png" alt="ex-plataforma">
+      </div>
     </div>
   </section>
-
-
-
-</div>
-<section class="about-section">
-<div class="about-container">
-<div class="about-text">
-<h2>ACOMPANHE SEU VEICULO EM TEMPO REAL DIRETO NO NOSSO APLICATIVO.</h2><br></h2>
-<p>
-A EVOO Tech apresenta a melhor e mais completa plataforma de
-rastreamento do mercado. Tudo isso associado a um layout incrível,
-agradável e intuitivo.
-</p>
-<a href="#" class="about-button">Saiba mais</a>
-</div>
-<div class="about-image">
-<img src="/src/imagens/44.png" alt="ex-plataforma">
-</div>
-</div>
-</section>
-
- 
-
-<section class="section-obstaculos">
-<h1 class="section-obstaculos h1">Segurança e Controle Total na Palma da Sua Mão.</h1>
-<div class="cards-container">
-
-<div class="card">
-<h3>Rastreamento em tempo real</h3>
-<p>Monitore seu veículo 24h por dia, com localização precisa e histórica de rotas. Segurança na palma da sua mão.</p>
-<img src="/src/imagens/car.png" alt="carro">
-</div>
-
-<div class="card">
-<h3>Conexão total com seu veículo</h3>
-<p>Receba alertas instantâneos sobre ignição ligada/desligada, limites de velocidade e cerca virtual. Mantenha o controle.</p>
-<img src="/src/imagens/covid.png" alt="covid">
-</div>
-
-<div class="card">
-<h3>Alertas de Segurança Personalizados</h3>
-<p>Configure notificações para cada evento: movimento, entrada/saída de áreas restritas ou bateria desconectada. Resposta rápida.</p>
-<img src="/src/imagens/alert.png" alt="alerta">
-</div>
-
-<div class="card">
-<h3>Relatórios detalhados de uso</h3>
-<p>Acesse histórico de viagens, consumo de combustível estimado e tempo parado. Otimize a gestão da sua frota ou veículo.</p>
-<img src="/src/imagens/relatorio.png" alt="relatorio">
-</div>
-
-</div>
-</section>
-
-<section class="suport-section">
-<div class="about-container">
-<div class="about-text">
-<h2>Durma tranquilo com a Central 24h<br></h2>
-<p>
-Sabemos que um dos principais desafios para uma empresa de rastreamento é uma central 24h dedicada. Contamos com uma central 0800 com uma equipe especializada 24h/7, para atender seu cliente final em eventos de roubo e furto, trazendo mais tranquilidade no seu dia a dia e lhe dando tempo e disposição para focar no que realmente importa, vender!
-</p>
-<a href="#" class="about-button">Saiba mais</a>
-</div>
-
-</div>
-</section>
-
-
-
-
-
-
-<section class="faq-section">
-<h2>Perguntas frequentes</h2>
-<ul class="faq-list">
-<li class="faq-item">
-<button class="faq-question">
-Quem é a Evoo tech?
-<span class="icon">+</span>
-</button>
-<div class="faq-answer">
-<p>resposta</p>
-</div>
-</li>
-
-
-
-<li class="faq-item">
-<button class="faq-question">
-Porque escolher o EVOO 4G?
-<span class="icon">+</span>
-</button>
-<div class="faq-answer">
-<p>resposta</p>
-</div>
-</li>
-
-
-<li class="faq-item">
-<button class="faq-question">
-Como acompanho o rastreamento do meu veiculo?
-<span class="icon">+</span>
-</button>
-<div class="faq-answer">
-<p>Após a instalação do nosso equipamento, fornecemos a você um aplicativo que acompanha o seu veiculo em tempo real, diretamente na tela do seu celular.</p>
-</div>
-</li>
-
-<li class="faq-item">
-<button class="faq-question">
-Qual diferencial do nosso rastreador?
-<span class="icon">+</span>
-</button>
-<div class="faq-answer">
-<p>reposta</p>
-</div>
-</li>
-<li class="faq-item">
-<button class="faq-question">
-O evoo 4g possui garantia?
-<span class="icon">+</span>
-</button>
-<div class="faq-answer"><p>O equipamento evoo 4g tem 1 ano de garantia contra defeitos de fábrica, após o retorno do equipamento damos o prazo de máximo de 72h para validação de garantia.</p></div></li>
-
-
-<li class="faq-item"><button class="faq-question">Como configurar o Evoo 4g na minha plataforma?<span class="icon">+</span></button><div class="faq-answer"><p>Apenas com o envio de comando da APN do chip (APN,apn,usuario,senha#) e IP e Porta (SERVER,0,ip,porta,0#) da sua plataforma já faz com o que o equipamento comunique.
-</p></div></li>
-</ul>
-</section>
-
-
-
-<section class="form-info-container">
-<div class="form-info-content">
-
-<div class="form-info-text">
-<h2>Pronto pra conversarmos sobre as suas demandas?</h2>
-<p>Preencha o formulário e entraremos em contato com você.</p>
-</div>
-
-<form class="form-info-form">
-<input type="text" placeholder="Nome completo" required>
-<input type="tel" placeholder="Fone" required>
-<input type="email" placeholder="Email" required>
-<button type="submit">Solicitar contato</button>
-</form>
-
-</div>
-</section>
-
-
-
-
-<footer id="contato" class="footer">
-<hr />
-<div class="footer-container">
-<div class="footer-logo">
-<img src="./src/imagens/logo_reverse.png" alt="Logo Evoo" />
-
-</div>
-
-<ul class="footer-menu">
-<li>(91) 9999-9999</li>
-<li>Whatsapp: (91) 9999-9999</li>
-<li>Belém - PA</li>
-<li>Segunda a sexta: 8h às 18h</li>
-</ul>
-
-<div class="footer-right">
-<div class="footer-social">
-<a href="#"><i class="fab fa-youtube"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-</div>
-<p>©2025, Todos os direitos Reservados.</p>
-</div>
-</div>
-</footer>
-
-
-
-<a href="URL_DO_SEU_WHATSAPP" target="_blank" class="whatsapp-float">
-<i class="fab fa-whatsapp"></i> 
-</a>
-<script src="/src/js/script.js"></script>
-</body>
+  
+  <section id="carrousel-section">
+    <div class="embla">
+      <div class="embla__container">  
+        <div class="embla__slide slide_container">
+          <img src="https://s2-techtudo.glbimg.com/DG5m1h3x5FRbnpjD3W4gwS6XR_Y=/0x0:910x510/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2024/p/A/Z33KHnRcS95eaQ8d8axA/naruto-uzumaki-qabz-910x510.png" alt="">
+          <img src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABWBq7tUsEtUTXGbJR9SGfqG5XS7XgcyBbJ2fLJfO6orwggGNpgeCtNYb0elerhtwtUiSi-x0ugDJT9XWjjNITiChA0ICAixWHT5K.jpg?r=44e" alt="">
+          <img src="https://miro.medium.com/v2/resize:fit:1400/0*qKksSvflsm_XHdI7.jpg" alt="">
+        </div>
+        <div class="embla__slide slide_container">
+        </div>
+        <div class="embla__slide slide_container">
+        </div>
+      </div>
+    </div>
+    <div class="embla2">
+      <div class="embla__container">  
+        <div class="embla__slide slide_container">
+          <img src="https://s2-techtudo.glbimg.com/DG5m1h3x5FRbnpjD3W4gwS6XR_Y=/0x0:910x510/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2024/p/A/Z33KHnRcS95eaQ8d8axA/naruto-uzumaki-qabz-910x510.png" alt="">
+          <img src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABWBq7tUsEtUTXGbJR9SGfqG5XS7XgcyBbJ2fLJfO6orwggGNpgeCtNYb0elerhtwtUiSi-x0ugDJT9XWjjNITiChA0ICAixWHT5K.jpg?r=44e" alt="">
+          <img src="https://miro.medium.com/v2/resize:fit:1400/0*qKksSvflsm_XHdI7.jpg" alt="">
+        </div>
+        <div class="embla__slide slide_container">
+        </div>
+        <div class="embla__slide slide_container">
+        </div>
+      </div>
+    </div>
+  </section> 
+  
+  <section class="section-obstaculos">
+    <h1 class="section-obstaculos h1">Segurança e Controle Total na Palma da Sua Mão.</h1>
+    <div class="cards-container">
+      
+      <div class="card">
+        <h3>Rastreamento em tempo real</h3>
+        <p>Monitore seu veículo 24h por dia, com localização precisa e histórica de rotas. Segurança na palma da sua mão.</p>
+        <img src="/src/imagens/car.png" alt="carro">
+      </div>
+      
+      <div class="card">
+        <h3>Conexão total com seu veículo</h3>
+        <p>Receba alertas instantâneos sobre ignição ligada/desligada, limites de velocidade e cerca virtual. Mantenha o controle.</p>
+        <img src="/src/imagens/covid.png" alt="covid">
+      </div>
+      
+      <div class="card">
+        <h3>Alertas de Segurança Personalizados</h3>
+        <p>Configure notificações para cada evento: movimento, entrada/saída de áreas restritas ou bateria desconectada. Resposta rápida.</p>
+        <img src="/src/imagens/alert.png" alt="alerta">
+      </div>
+      
+      <div class="card">
+        <h3>Relatórios detalhados de uso</h3>
+        <p>Acesse histórico de viagens, consumo de combustível estimado e tempo parado. Otimize a gestão da sua frota ou veículo.</p>
+        <img src="/src/imagens/relatorio.png" alt="relatorio">
+      </div>
+      
+    </div>
+  </section>
+  
+  <section class="suport-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Durma tranquilo com a Central 24h<br></h2>
+        <p>
+          Sabemos que um dos principais desafios para uma empresa de rastreamento é uma central 24h dedicada. Contamos com uma central 0800 com uma equipe especializada 24h/7, para atender seu cliente final em eventos de roubo e furto, trazendo mais tranquilidade no seu dia a dia e lhe dando tempo e disposição para focar no que realmente importa, vender!
+        </p>
+        <a href="#" class="about-button">Saiba mais</a>
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  <section class="faq-section">
+    <h2>Perguntas frequentes</h2>
+    <ul class="faq-list">
+      <li class="faq-item">
+        <button class="faq-question">
+          Quem é a Evoo tech?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>resposta</p>
+        </div>
+      </li>
+      
+      
+      
+      <li class="faq-item">
+        <button class="faq-question">
+          Porque escolher o EVOO 4G?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>resposta</p>
+        </div>
+      </li>
+      
+      
+      <li class="faq-item">
+        <button class="faq-question">
+          Como acompanho o rastreamento do meu veiculo?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Após a instalação do nosso equipamento, fornecemos a você um aplicativo que acompanha o seu veiculo em tempo real, diretamente na tela do seu celular.</p>
+        </div>
+      </li>
+      
+      <li class="faq-item">
+        <button class="faq-question">
+          Qual diferencial do nosso rastreador?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>reposta</p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-question">
+          O evoo 4g possui garantia?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-answer"><p>O equipamento evoo 4g tem 1 ano de garantia contra defeitos de fábrica, após o retorno do equipamento damos o prazo de máximo de 72h para validação de garantia.</p></div></li>
+        
+        
+        <li class="faq-item"><button class="faq-question">Como configurar o Evoo 4g na minha plataforma?<span class="icon">+</span></button><div class="faq-answer"><p>Apenas com o envio de comando da APN do chip (APN,apn,usuario,senha#) e IP e Porta (SERVER,0,ip,porta,0#) da sua plataforma já faz com o que o equipamento comunique.
+        </p></div></li>
+      </ul>
+    </section>
+    
+    
+    
+    <section class="form-info-container">
+      <div class="form-info-content">
+        
+        <div class="form-info-text">
+          <h2>Pronto pra conversarmos sobre as suas demandas?</h2>
+          <p>Preencha o formulário e entraremos em contato com você.</p>
+        </div>
+        
+        <form class="form-info-form">
+          <input type="text" placeholder="Nome completo" required>
+          <input type="tel" placeholder="Fone" required>
+          <input type="email" placeholder="Email" required>
+          <button type="submit">Solicitar contato</button>
+        </form>
+        
+      </div>
+    </section>
+    
+    
+    
+    
+    <footer id="contato" class="footer">
+      <hr />
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./src/imagens/logo_reverse.png" alt="Logo Evoo" />
+          
+        </div>
+        
+        <ul class="footer-menu">
+          <li>(91) 9999-9999</li>
+          <li>Whatsapp: (91) 9999-9999</li>
+          <li>Belém - PA</li>
+          <li>Segunda a sexta: 8h às 18h</li>
+        </ul>
+        
+        <div class="footer-right">
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <p>©2025, Todos os direitos Reservados.</p>
+        </div>
+      </div>
+    </footer>
+    
+    
+    
+    <a href="URL_DO_SEU_WHATSAPP" target="_blank" class="whatsapp-float">
+      <i class="fab fa-whatsapp"></i> 
+    </a>
+    <script src="/src/js/script.js"></script>
+    <script src="src/js/carousel.js"></script>
+  </body>
 </html>

@@ -1,0 +1,9 @@
+.slide_container{
+  height: 400px;
+}
+
+.slide_container img{
+  width: 33%;
+  height: 400px;
+  object-fit: cover;
+}
