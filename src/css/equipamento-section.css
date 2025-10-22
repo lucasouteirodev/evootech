@@ -9,6 +9,8 @@
   padding: 100px 10%;
   gap: 40px;
   min-height: 90vh;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .equipamento-content h2 {

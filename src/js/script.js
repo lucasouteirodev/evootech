@@ -80,7 +80,6 @@ ScrollReveal().reveal(".equi-effect", {
   duration: 1800,
 reset: true,
 });
-
 ScrollReveal().reveal(".about-text ", {
   origin: "right",
   distance: "50%",
