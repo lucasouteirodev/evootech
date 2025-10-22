@@ -1,0 +1,131 @@
+.about-section {
+  /* background-color:#1a1d23; */
+  display: flex;
+  background-image: url(/src/imagens/2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: purple;
+  min-height: 800px; /* A seção terá NO MÍNIMO a altura da tela */
+}
+/* O padding será incluído dentro dos 100vh */
+
+.about-container {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+h3{
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.about-text {
+  flex: 1;
+  
+}
+
+ .about-text h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 80%;
+  width: 100%;
+  line-height: 2.0; 
+  text-align: left;
+  
+}
+.about-text p {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 80%
+}
+
+.about-button {
+  background: purple !important;
+  color: #fff !important;
+  border: none;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.about-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 120, 0, 0.4);
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  border-radius: 8px;
+}
+/* Garantir que todos os elementos respeitem o box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Estilo mobile (até 768px) */
+@media (max-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;    
+    text-align: center;
+    font-size: 1.2rem !important;
+    overflow: hidden;
+    word-wrap: break-word; /* Quebra palavras longas */
+  }
+
+ .about-container img{
+  display: none;
+ }
+
+  .about-container h2 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+  .about-container h3 {
+    display: none;
+  }
+
+  .about-text {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20%;
+    
+  }
+
+
+  .about-text p {
+    text-align: justify;
+    width: 100%;
+    max-width: 100%;
+    word-break: break-word; /* Força quebra de palavras longas */
+  }
+
+  .about-button {
+    align-items: center;
+  }
+}

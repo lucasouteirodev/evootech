@@ -1,0 +1,22 @@
+.carousel_section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide_container {
+  height: 480px; /* 20% maior */
+  display: flex;
+}
+
+.slide_container img {
+  width: 33.33%;
+  height: 480px;
+  object-fit: contain;
+}
+
+/* Responsivo: exibir apenas uma imagem por vez no mobile */
+@media (max-width: 768px) {
+  .slide_container img {
+    width: 100%; /* ocupa toda a largura */
+  }
+}

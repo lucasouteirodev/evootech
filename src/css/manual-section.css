@@ -1,0 +1,83 @@
+.manuals-section {
+  width: 80%;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.manuals-section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.manuals-section h2 {
+  color: purple;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.manual-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: left;
+}
+
+.manual-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.manual-info small {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.download-button {
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 2px solid #555;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.download-button:hover {
+  background-color: #f0f0f0;
+}
+
+.download-button::before {
+  content: "⬇️";
+  margin-right: 8px;
+}
+
+.divider {
+  border-top: 1px solid #ccc;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .manual-item {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .download-button {
+    align-self: center;
+  }
+}

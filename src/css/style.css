@@ -1,0 +1,44 @@
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {  
+ margin: 0;
+  padding: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  overflow-x: hidden;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+.span-grad {
+  color: orange;
+}
+
+.embla {
+  width: 100%;
+  overflow: hidden;
+}
+.embla__container {
+  
+  display: flex;
+}
+.embla__slide {
+  
+  flex: 0 0 100%;
+  min-width: 0;
+}

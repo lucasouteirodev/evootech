@@ -1,0 +1,39 @@
+.info-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 60px;
+  background-color: white;
+}
+
+.info-card {
+  background: #111;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #00ff66;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #00ff66;
+}
+
+.info-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #aaa;
+  font-size: 14px;
+}
